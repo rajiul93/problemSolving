@@ -1,3 +1,5 @@
+// number %= 2 ভাগশেষ বের 
+
 const even_odd_checker =(number)=>{
 return (number %= 2) === 0 ? "even" : "Odd"
 }
