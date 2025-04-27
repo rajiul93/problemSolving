@@ -34,15 +34,20 @@ function reverseArray(arr) {
 }
 // console.log(reverseArray(numbers));
 
+// const removeDuplicate = (number) => {
+//   let newArray = [];
+//   for (let index = 0; index < number.length; index++) {
+//     const element = number[index];
+//     if (!newArray.includes(element)) {
+//       newArray.push(element);
+//     }
+//   }
+//   return newArray
+// };
 const removeDuplicate = (number) => {
-  let newArray = [];
-  for (let index = 0; index < number.length; index++) {
-    const element = number[index];
-    if (!newArray.includes(element)) {
-      newArray.push(element);
-    }
-  }
-  return newArray
-};
+    return [...new Set(number)];
+  };
+  
 
-console.log(removeDuplicate(numbers))
+// console.log(removeDuplicate(numbers))
+
