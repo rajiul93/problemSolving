@@ -47,7 +47,11 @@ function reverseArray(arr) {
 const removeDuplicate = (number) => {
     return [...new Set(number)];
   };
+const findPositiveNumber = (arr) => {
+  const newArray = arr.filter(n=>n % 2 ===0)
+    return newArray;
+  };
   
 
-// console.log(removeDuplicate(numbers))
+console.log(findPositiveNumber(numbers))
 
